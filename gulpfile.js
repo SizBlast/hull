@@ -51,3 +51,24 @@ gulp.task( 'sass-dev', function() {
         .pipe( sass( { outputStyle: 'expanded', indentWidth: 4 } ).on( 'error', sass.logError ) )
         .pipe( gulp.dest( 'assets/css' ) );
 } );
+
+/**
+ * Watch if there are any changes made to the CSS or JS files
+ */
+gulp.task( 'watch', function() {
+    gulp.watch( 'assets/sass/**/*.scss', ['sass-dev'] );
+} );
+
+/**
+ * Compile files for testing and debugging
+ */
+gulp.task( 'development', function() {
+    console.log( 'TODO' );
+} );
+
+/**
+ * Compile files for porduction
+ */
+gulp.task( 'production', function() {
+    console.log( 'TODO' );
+} );

@@ -17,6 +17,32 @@
 
 <?php get_header(); ?>
 
-index.php
+<div class="container">
+
+    <div class="post-loop post-loop-default">
+
+        <?php if ( have_posts() ): ?>
+
+            <?php while ( have_posts() ): the_post(); // Start the loop ?>
+
+                <?php get_template_part( 'templates/post/loop', get_post_format() ); ?>
+
+            <?php endwhile; ?>
+
+            <?php // the_posts_pagination( array(
+            //     'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
+            //     'next_text' => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
+            //     'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
+            // ) ); ?>
+
+        <?php else: ?>
+
+            <?php get_template_part( 'templats/post/content', 'none' ); ?>
+
+        <?php endif; ?>
+
+    </div>
+
+</div>
 
 <?php get_footer(); ?>

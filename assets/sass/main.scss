@@ -1,7 +1,6 @@
-body {
-    color: red;
+// Variables
+@import "variables/colors";
 
-    a {
-        color: green;
-    }
-}
+// Partials
+@import "partials/meta";
+@import "partials/loop";

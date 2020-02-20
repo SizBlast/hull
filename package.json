@@ -1,24 +1,27 @@
 {
-  "name": "Hull",
-  "version": "1.0.0",
-  "description": "Bootstrap Base Theme",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:SizBlast/hull.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Christof Van Cauteren",
-  "license": "GPL-3.0",
-  "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.2.0",
-    "bootstrap": "^4.1.3",
-    "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1",
-    "jquery": "^3.3.1",
-    "normalize.css": "^8.0.0",
-    "popper.js": "^1.14.3"
-  }
+    "name": "hull",
+    "version": "1.0.0",
+    "description": "Bootstrap Base Theme",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:SizBlast/hull.git"
+        },
+    "scripts": {
+        "dev": "npm run development",
+        "development": "gulp development",
+        "prod": "npm run production",
+        "production": "gulp production",
+        "watch": "gulp watch"
+    },
+    "author": "Christof Van Cauteren",
+    "license": "GPL-3.0",
+    "devDependencies": {
+        "@fortawesome/fontawesome-free": "^5.2.0",
+        "bootstrap": "^4.1.3",
+        "gulp": "^3.9.1",
+        "gulp-sass": "^4.0.1",
+        "jquery": "^3.3.1",
+        "normalize.css": "^8.0.0",
+        "popper.js": "^1.14.3"
+    }
 }
